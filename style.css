@@ -1,47 +1,130 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header,
 main,
 footer {
-    background-color: #eee;
-    margin-bottom: 1%;
-    padding: 2%;
+  background-color: #eee;
+  margin-bottom: 1%;
+  padding: 2%;
 }
 
 .box {
-    width: 10%;
-    aspect-ratio: 1/1;
-    padding: 1%;
-    margin: 0.3%;
+  width: 10%;
+  aspect-ratio: 1/1;
+  padding: 1%;
+  margin: 0.3%;
 }
 
 #container {
-    position: relative;
-    border: 3px red dashed;
-    width: 100%;
-    aspect-ratio: 10/9;
+  position: relative;
+  border: 3px red dashed;
+  width: 100%;
+  aspect-ratio: 10/9;
 }
 
 /* SKRIV KUN KODE HERUNDER */
 
 .redBox {
-    background-color: #ff1d00;
+  background-color: #ff1d00;
+  position: absolute;
+  translate: 300% 100%;
+  scale: 140%;
+  rotate: 45deg;
+  z-index: 1;
 }
 
 .yellowBox {
-    background-color: #ffeb00;
+  background-color: #ffeb00;
+  position: absolute;
+  translate: 300% 200%;
+  scale: 200%;
+  z-index: 2;
 }
 
 .pinkBox {
-    background-color: #ff9ecf;
+  background-color: #ff9ecf;
+  position: absolute;
+  translate: 350% 50%;
+  scale: 50% 100%;
+  z-index: ;
 }
 
 .greenBox {
-    background-color: #1fd81f;
+  background-color: #1fd81f;
+  position: absolute;
+  z-index: 4;
+  translate: 350% 225%;
+  scale: 50%;
 }
 
 .blueBox {
+  background-color: #0180fc;
+  position: absolute;
+  z-index: 3;
+  translate: 270% 250%;
+  scale: 75% 100%;
+}
+@media only screen and (max-width: 900px) {
+  .box {
+    width: 10%;
+    aspect-ratio: 1/1;
+    padding: 1%;
+    margin: 0.3%;
+  }
+
+  #container {
+    position: relative;
+    border: 3px red dashed;
+    width: 100%;
+    aspect-ratio: 10/9;
+  }
+
+  /* SKRIV KUN KODE HERUNDER */
+
+  .redBox {
+    background-color: #ff1d00;
+    position: absolute;
+    transform-origin: 0% 100%;
+    translate: 300% 100%;
+    rotate: 0.2turn;
+    scale: 100%;
+  }
+
+  .yellowBox {
+    background-color: #ffeb00;
+    position: absolute;
+    transform-origin: 0% 100%;
+    translate: 300% 100%;
+    rotate: 0.4turn;
+    scale: 100%;
+  }
+
+  .pinkBox {
+    background-color: #ff9ecf;
+    position: absolute;
+    transform-origin: 0% 100%;
+    translate: 300% 100%;
+    rotate: 0.6turn;
+    scale: 100%;
+  }
+
+  .greenBox {
+    background-color: #1fd81f;
+    position: absolute;
+    transform-origin: 0% 100%;
+    translate: 300% 100%;
+    rotate: 0.8turn;
+    scale: 100%;
+  }
+
+  .blueBox {
     background-color: #0180fc;
+    position: absolute;
+    transform-origin: 0% 100%;
+    translate: 300% 100%;
+    rotate: 1turn;
+    scale: 100%;
+  }
 }
